@@ -1,6 +1,6 @@
-package ru.geekbrains.savenko.j1lesson1;
+﻿package ru.geekbrains.savenko.j1lesson1;
 
-//Home work 1
+//First lesson home work
 
 public class Main {
 
