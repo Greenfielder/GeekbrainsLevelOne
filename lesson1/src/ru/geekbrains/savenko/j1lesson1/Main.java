@@ -1,5 +1,7 @@
 package ru.geekbrains.savenko.j1lesson1;
 
+//Home work 1
+
 public class Main {
 
     public static void main(String[] args) {
