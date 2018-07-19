@@ -21,6 +21,12 @@ public class Main {
         System.out.println("");
         System.out.println("Пятое задание");
         minAndMax();
+
+        System.out.println("");
+        System.out.println("Шестое задание");
+        int[] arr = {8, 5, 3, 2, 14};
+        System.out.println(isBalance(arr));
+
     }
 
     private static void invert() {
@@ -87,4 +93,30 @@ public class Main {
         System.out.println(arr[min] + " " + arr[max]);
     }
 
+    private static boolean isBalance(int[] arr) {
+        int s = 0;
+        int f = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            s = s + arr[i];
+        }
+
+        if (s % 2 != 0) {
+            return false;
+        } else {
+            int x = s / 2;
+
+            for (int i = 0; i < arr.length; i++) {
+                f += arr[i];
+
+                if (x > f) {
+                } else if (x == f) {
+                    return true;
+                } else if (x < f) {
+                    return false;
+                }
+            }
+        }
+        return isBalance(arr);
+    }
 }
